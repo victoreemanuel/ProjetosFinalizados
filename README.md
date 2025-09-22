@@ -1,6 +1,6 @@
-# ✨ Projetos Finalizados
+# Projetos Finalizados
 
-Bem-vindo(a) ao repositório **Projetos Finalizados**! 🚀
+Bem-vindo(a) ao repositório **Projetos Finalizados**!
 Aqui você encontra todos os projetos que desenvolvi e concluí, reunidos em um único lugar.
 
 ## 📁 Estrutura
@@ -29,5 +29,5 @@ Os projetos podem envolver diferentes stacks, incluindo:
 
 ## 🌐 Autor
 
-Feito com 💻 por [**Victor Emanuel**](https://github.com/victoreemanuel)
+Desenvolvido por [**Victor Emanuel**](https://github.com/victoreemanuel)
 
