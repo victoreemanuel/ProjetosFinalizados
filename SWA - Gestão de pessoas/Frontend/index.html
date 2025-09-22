@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SWA Gestão de Pessoas</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <img src="/img/userlogo1.png" alt="Logo" class="logo">
+    <h1 class="title">SWA<br>GESTÃO DE PESSOAS</h1>
+  </header>
+
+  <main class="container">
+    <section class="card card-form">
+      <h2 class="gradient-text">Novo Cadastro</h2>
+
+      <form id="formCadastro" autocomplete="off">
+        <div class="form-grid">
+          <div class="form-group full">
+            <label for="nome">Nome Completo</label>
+            <input id="nome" type="text" placeholder="Digite o nome completo" required>
+          </div>
+
+          <div class="form-group">
+            <label for="cpf">CPF</label>
+            <input id="cpf" type="text" placeholder="000.000.000-00" required>
+          </div>
+
+          <div class="form-group">
+            <label for="nascimento">Data de Nascimento</label>
+            <input id="nascimento" type="text" placeholder="dd/mm/aaaa" required>
+          </div>
+
+          <div class="form-group full">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" placeholder="exemplo@email.com" required>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" id="btnCadastrar" class="btn-gradient">Cadastrar Pessoa</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="listaPessoas" class="card card-list">
+      <div id="listaVazia" class="empty-state">
+        <img src="/img/userlogo1.png" alt="Logo" class="logo-empty">
+        <p><strong>Nenhuma pessoa cadastrada</strong><br>Cadastre a primeira pessoa usando o formulário acima.</p>
+      </div>
+
+      <div id="listaCheia" style="display:none;">
+        <div class="lista-header">
+          <h2 class="gradient-text">Pessoas Cadastradas (<span id="contador">0</span>)</h2>
+
+          <div class="busca">
+            <img src="/img/lupa2.png" alt="Buscar" class="icon">
+            <input id="buscaInput" type="text" placeholder="Buscar por nome, CPF ou e-mail">
+          </div>
+        </div>
+
+        <div id="pessoasContainer" class="pessoas-container"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
