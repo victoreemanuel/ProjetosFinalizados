@@ -2,7 +2,7 @@ aplication.properties
 
 spring.application.name=GestaoPessoas
 spring.datasource.url=jdbc:mysql://localhost:3307/pessoa
-spring.datasource.username=SEUUSURARIO
+spring.datasource.username=SEUUSUARIO
 spring.datasource.password=SUASENHA
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
